@@ -1,0 +1,32 @@
+[
+    {
+        "title": "Network_Vulnerability_Scanner",
+        "tags": [
+            "Python",
+            "Nmap",
+            "Security"
+        ],
+        "description": "Automated tool for detecting open ports and potential vulnerabilities in local networks. Generates comprehensive PDF reports.",
+        "link": "#"
+    },
+    {
+        "title": "ISO_27001_Compliance_Tracker",
+        "tags": [
+            "GRC",
+            "Excel",
+            "Framework"
+        ],
+        "description": "A structured framework for tracking ISO 27001 controls implementation status and evidence collection.",
+        "link": "#"
+    },
+    {
+        "title": "Phishing_Simulation_Campaign",
+        "tags": [
+            "Social Eng",
+            "GoPhish",
+            "Awareness"
+        ],
+        "description": "Designed and executed a controlled phishing simulation to test and improve organizational security awareness.",
+        "link": "#"
+    }
+]
