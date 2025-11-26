@@ -11,7 +11,8 @@ const GlobalMenu = ({ setHoveredMenu }) => {
             width: '100%',
             padding: '0 40px', // Match container padding
             zIndex: 96, // Above overlay (90) and below FixedNav (100)
-            pointerEvents: 'none' // Allow clicking through empty space
+            pointerEvents: 'none', // Allow clicking through empty space
+            mixBlendMode: 'difference'
         }}>
             <ul className="menu__inner menu-home" style={{
                 listStyle: 'none',
@@ -60,7 +61,7 @@ const GlobalMenu = ({ setHoveredMenu }) => {
                     />
                 </li>
                 <li className="menu__item" style={{ marginTop: '0' }}>
-                    <span style={{ fontFamily: 'var(--font-mono)', fontSize: '0.8rem', color: '#1C1C1C' }}>©2025</span>
+                    <span style={{ fontFamily: 'var(--font-mono)', fontSize: '0.8rem', color: '#FFF' }}>©2025</span>
                 </li>
             </ul>
         </div>

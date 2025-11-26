@@ -324,7 +324,7 @@ h6 {
     /* Thin */
     line-height: 110%;
     letter-spacing: -0.01em;
-    color: #666;
+    color: #FFF;
     pointer-events: none;
     /* mix-blend-mode: multiply; */
     margin-right: 0;
@@ -338,7 +338,7 @@ h6 {
     line-height: 110%;
     letter-spacing: -0.01em;
     font-weight: 500;
-    color: #1C1C1C;
+    color: #FFF;
     position: relative;
     overflow: hidden;
     display: flex;
@@ -475,10 +475,7 @@ h6 {
     color: rgba(255, 255, 255, 0.3);
 }
 
-.menu-active .menu__link-span>span>span,
-.menu-active .menu__link-clone>span>span {
-    /* Ensure text stroke or fill adapts if needed, but color change handles it */
-}
+
 
 /* ASL Button Styles */
 .nav-asl-btn {
@@ -535,6 +532,8 @@ h6 {
     height: auto;
     display: block;
     border-radius: 4px;
+    aspect-ratio: 1216 / 1555;
+    object-fit: cover;
 }
 
 .about-hobby {
@@ -784,4 +783,28 @@ h6 {
 .menu-active .nav-asl-btn:hover {
     background: #FFF;
     color: #000 !important;
+}
+
+/* About Image Overlay */
+.about-img-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFF;
+    font-family: var(--font-display);
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+    z-index: 2;
+}
+
+@media (max-width: 768px) {
+    .about-img-overlay {
+        font-size: 2rem;
+    }
 }

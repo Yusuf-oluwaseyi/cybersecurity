@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import riskMatrix from '../assets/risk_matrix.jpg';
 
 const About = () => {
     return (
@@ -12,8 +13,9 @@ const About = () => {
                         Based in Lagos, Nigeria. I am a GRC Analyst and Network Engineer dedicated to securing digital infrastructures and ensuring strategic compliance.
                     </h3>
                     <div className="about-image">
-                        <div className="about-mask img1">
-                            <img src="https://placehold.co/1216x1555/1a1a1a/FFF?text=GRC+Focus" alt="GRC Focus" className="lazyload" />
+                        <div className="about-mask img1" style={{ position: 'relative' }}>
+                            <img src={riskMatrix} alt="GRC Focus - Risk Matrix" className="lazyload" />
+                            <div className="about-img-overlay">GRC Focus</div>
                         </div>
                         <div className="about-mask img2">
                             <img src="https://placehold.co/1216x1555/1a1a1a/FFF?text=Network+Security" alt="Network Security" className="lazyload" />
@@ -26,9 +28,9 @@ const About = () => {
                         Enthusiastic about crafting
                         <span className="font-sec"> security frameworks, </span>
                         <span className="font-sec">risk assessments,</span>
-                        <span className="font-sec">compliance strategies,</span>
+                        <span className="font-sec">compliance strategies, </span>
                         and
-                        <span className="font-sec">network architectures</span>
+                        <span className="font-sec"> network architectures </span>
                         into resilient systems.
                     </div>
                     <div className="about-text">This is me, doing my daily things</div>
